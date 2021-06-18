@@ -1,0 +1,21 @@
+﻿@model BikeShop.Models.Holidays
+
+@{
+    ViewBag.Title = "HolidaysOfMonth";
+}
+
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>RussianName</th>
+    </tr>
+
+    <tr>
+        <td>@Model.Date.ToString("MM/dd/yyyy")</td>
+        <td>@Model.Name</td>
+        <td>@Model.LocalName</td>
+
+    </tr>
+
+</table>
