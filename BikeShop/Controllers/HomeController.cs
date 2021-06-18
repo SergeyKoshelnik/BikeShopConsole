@@ -10,8 +10,6 @@ namespace BikeShop.Controllers
 {
     public class HomeController : Controller
     {
-
-
         public ActionResult Index()
         {
             return View();
@@ -35,7 +33,6 @@ namespace BikeShop.Controllers
             {
                 result = streamReader.ReadToEnd();
                 holidays = JsonConvert.DeserializeObject<List<Holidays>>(result);
-
             }
 
             if (holidays != null)
@@ -44,14 +41,8 @@ namespace BikeShop.Controllers
 
                 return View(hol);
             }
-
-
             return View();
-
-
         }
-
-
 
     }
 }
